@@ -15,7 +15,7 @@ LoadHUD.average_cnt = 60
 LoadHUD.values = {}
 
 function LoadHUD:draw()
-	if g_client ~= nil and g_currentMission.hud.isVisible and g_currentMission.controlledVehicle ~= nil then
+	if g_client ~= nil and g_currentMission.hud.isVisible and g_currentMission.controlledVehicle ~= nil and g_currentMission.controlledVehicle.rootVehicle ~= nil then
 
         -- calculate position and size
         local posX = g_currentMission.inGameMenu.hud.speedMeter.gaugeCenterX
